@@ -1,0 +1,24 @@
+.logo {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+
+	img {
+		width: 1.3rem;
+		height: 1.3rem;
+	}
+
+	h1 {
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--primary-color);
+	}
+}
+
+.footer_logo {
+	color: #fff;
+
+	h1 {
+		color: #fff;
+	}
+}

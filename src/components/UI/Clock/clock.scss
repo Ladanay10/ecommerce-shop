@@ -1,0 +1,55 @@
+.clock__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	margin-top: 15px;
+
+	.clock__data {
+		display: flex;
+		color: #fff;
+		gap: 30px;
+		text-align: center;
+
+		div {
+			h1 {
+				font-size: 25px;
+				margin-bottom: 4px;
+			}
+
+			h5 {
+				font-size: 18px;
+			}
+		}
+
+		span {
+			font-size: 1.7rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.clock__wrapper {
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		padding: 10px;
+		.clock__data {
+			gap: 5px;
+			div {
+				h1 {
+					font-size: 20px;
+					margin-bottom: 4px;
+				}
+
+				h5 {
+					font-size: 14px;
+				}
+			}
+
+			span {
+				font-size: 1.7rem;
+			}
+		}
+
+	}
+}

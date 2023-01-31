@@ -1,0 +1,59 @@
+.table {
+
+	tr td {
+		color: var(--primary-color);
+
+		img {
+			width: 80px;
+			height: 80px;
+			object-fit: cover;
+		}
+
+		span {
+			cursor: pointer;
+		}
+
+
+	}
+}
+
+.title {
+	text-align: center;
+}
+
+.cart__info {
+	h6 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	span {
+		font-weight: 700;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.table {
+		th {
+			padding: 0 3px;
+
+
+		}
+
+		tr td {
+			font-size: 14px;
+			padding: 0;
+		}
+	}
+
+	.cart__info {
+		span {
+			font-size: 20px;
+		}
+	}
+	.btns {
+		text-align: center;
+	}
+}
