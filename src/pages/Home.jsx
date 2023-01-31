@@ -7,11 +7,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Services } from '../services/Services';
 import { ProductsList } from '../components/UI/ProductList/ProductsList';
-import products from '../assets/data/products';
 import counterImg from '../assets/images/counter-timer-img.png';
 import { Clock } from '../components/UI/Clock/Clock';
 import useGetData from '../custom-hooks/useGetData';
-import useAuth from '../custom-hooks/useAuth';
 const Home = () => {
 
 	const { data: products, loading } = useGetData('products')
@@ -21,8 +19,6 @@ const Home = () => {
 	const [mobileProducts, setMobileProducts] = useState([]);
 	const [wirelessProducts, setWirelessProducts] = useState([]);
 	const [popularProducts, setPopularProducts] = useState([]);
-	const { currentUser } = useAuth();
-	console.log(currentUser.uid);
 	const year = new Date().getFullYear();
 	useEffect(() => {
 		const filterTrendingProducs = products.filter(item => item.category === 'chair');
